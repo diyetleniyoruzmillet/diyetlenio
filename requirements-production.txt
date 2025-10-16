@@ -1,0 +1,45 @@
+# Production requirements for Diyetlenio
+# Core Django
+Django>=4.2,<5.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.0.0
+
+# Authentication & Security
+djangorestframework-simplejwt>=5.2.0
+django-ratelimit>=4.0.0
+
+# Database
+psycopg2-binary>=2.9.0
+
+# Cache & Session
+redis>=4.0.0
+django-redis>=5.2.0
+
+# API Documentation
+drf-spectacular>=0.26.0
+
+# File Handling & Storage
+Pillow>=10.0.0
+django-storages>=1.13.0  # For cloud storage
+boto3>=1.26.0  # For AWS S3
+
+# Production Server
+gunicorn>=20.1.0
+whitenoise>=6.0.0  # Static file serving
+
+# Monitoring & Logging
+sentry-sdk>=1.25.0
+django-extensions>=3.2.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Utils
+celery>=5.2.0  # Background tasks
+python-dateutil>=2.8.0
+pytz>=2023.3
+
+# Development & Testing (optional for staging)
+pytest>=7.0.0
+pytest-django>=4.5.0
+coverage>=7.0.0
